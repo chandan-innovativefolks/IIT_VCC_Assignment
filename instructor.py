@@ -9,4 +9,5 @@ def instructor():
     return f"Instructor: {INSTRUCTOR_NAME}"
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    # Listen on all interfaces so other VMs can call it
+    app.run(host="0.0.0.0", port=8000, debug=True)
