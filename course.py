@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-AUTHOR_NAME = "The Great Chandan Varma"
+AUTHOR_NAME = "Chandan Varma"
 
 @app.route("/author")
 def author():
